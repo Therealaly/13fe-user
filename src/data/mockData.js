@@ -110,3 +110,27 @@ export const MockReserveHistory = [
     status: "accepted",
   },
 ];
+
+export const MockRoomData = [
+  {
+    id: 1,
+    name: "Ruangan Cempaka",
+    desc: "Ruangan dengan kapasitas 25 orang. Terletak di samping perpustakaan. Pengunjung dilarang merokok maupun makan atau minum di dalam ruangan",
+    photo: "https://photo.com/ruanganA",
+    status: "available",
+  },
+  {
+    id: 2,
+    name: "Ruangan Melati",
+    desc: "Ruangan dengan kapasitas 15 orang. Terletak di samping Ruang akademik. Makan diperbolehkan di dalam ruangan",
+    photo: "https://photo.com/ruanganB",
+    status: "available",
+  },
+  {
+    id: 3,
+    name: "Ruangan Kamboja",
+    desc: "Ruangan dengan kapasitas 20 orang. dengan konfigurasi meja melingkar. Disediakan sistem audio dan video",
+    photo: "https://photo.com/ruanganC",
+    status: "reserved",
+  },
+];

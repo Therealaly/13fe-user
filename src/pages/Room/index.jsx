@@ -83,7 +83,7 @@ const Room = () => {
 
   return (
     <Box m="20px">
-        <Header title="ROOM" subtitle="Reservation Request and Room Overview"/>
+        <Header title="ROOM" subtitle="Reservation Request and Approval"/>
         <Box>
             <MaterialReactTable
                 data={tableData}
@@ -92,7 +92,7 @@ const Room = () => {
                 renderRowActions={({ row }) => (
                     <Box sx={{ display: 'flex', gap: '1rem' }}>
                       <Tooltip arrow placement="left" title="Accept">
-                        <IconButton color="success" onClick={() => {handleAcceptRow(row)}}>
+                        <IconButton color="success" onClick={() => handleAcceptRow(row)}>
                           <CheckIcon />
                         </IconButton>
                       </Tooltip>

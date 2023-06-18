@@ -56,34 +56,36 @@ const CreateRoom = () => {
         {
             accessorKey: "desc",
             header: "Description",
-            size:150,
+            size:200,
             
         },
         {
             accessorKey: "photo",
             header: "Photo",
-            size:100,
+            size:150,
             
         },
         {
             accessorKey: "status",
             header: "Status",
-            size:100,
-            Cell: ({ status }) => (
+            size:75,
+            Cell: ({ row: {status} }) => (
                 <Box
-                    width="60%"
-                    m="0 auto"
-                    p="5px"
-                    display="flex"
-                    justifyContent="center"
-                    backgroundColor={ 
-                        status === "available"
-                        ? colors.greenAccent[600]
-                        : status === "reserved"
-                        ? colors.redAccent[500]
-                        : colors.redAccent[500]
-                    }
-                    borderRadius="4px"
+                    sx={{  
+                        width:"60%",
+                        m:"0 auto",
+                        p:"5px",
+                        display:"flex",
+                        justifyContent:"center",
+                        backgroundColor:
+                            status === "available"
+                            ? colors.greenAccent[600]
+                            : status === "reserved"
+                            ? colors.redAccent[500]
+                            : colors.redAccent[500],
+                        
+                        borderRadius:"4px",
+                }}
                 >  
                     <Typography color={colors.grey[100]} sx={{ ml: "5px" }}>
                         {status}

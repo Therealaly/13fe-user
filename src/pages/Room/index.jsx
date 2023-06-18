@@ -15,13 +15,13 @@ const Room = () => {
 
     const handleAcceptRow = useCallback(
         (row) => {
-
+            //API
         },
         );
 
     const handleRejectRow = useCallback(
         (row) => {
-            
+            //API
         },
         );
     
@@ -61,7 +61,7 @@ const Room = () => {
             accessorKey: "status",
             header: "Status",
             size:100,
-            Cell: ({ status }) => (
+            Cell: ({ row: {status} }) => (
                 <Box
                     width="60%"
                     m="0 auto"

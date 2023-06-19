@@ -8,6 +8,7 @@ import SideBar from './pages/Global/SideBar';
 import User from "./pages/team";
 import Room from "./pages/Room";
 import CreateRoom from "./pages/CreateRoom";
+import NewRoom from "./pages/CreateRoom/NewRoomView.jsx"
 // import RoomHistory from "./pages/RoomHistory";
 
 
@@ -25,9 +26,10 @@ function App() {
             <Routes>
               <Route path='/' element={<Dashboard/>} />
               <Route path='/user' element={<User/>} />
-              <Route path='/room' element={<Room/>} />
+              <Route path='/reservation' element={<Room/>} />
               {/* <Route path='/room/history' element={<CreateRoom/>} /> */}
-              <Route path='/room/create' element={<CreateRoom/>} />
+              <Route path='/room' element={<CreateRoom/>} />
+              <Route path='/room/create' element={<NewRoom/>} />
             </Routes>
           </main>  
         </div>

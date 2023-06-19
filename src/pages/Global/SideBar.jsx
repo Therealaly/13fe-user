@@ -96,8 +96,8 @@ const SideBar = () => {
             selected={selected}
             setSelected={setSelected} />
           <Item
-            title="Room"
-            to="/room"
+            title="Reservation"
+            to="/reservation"
             icon={<BusinessOutlinedIcon />}
             selected={selected}
             setSelected={setSelected} />
@@ -109,8 +109,8 @@ const SideBar = () => {
               Room Management
           </Typography>
           <Item
-            title="Add Room"
-            to="/room/create"
+            title="Room"
+            to="/room"
             icon={<DomainAddOutlinedIcon />}
             selected={selected}
             setSelected={setSelected} />

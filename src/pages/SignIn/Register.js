@@ -48,7 +48,7 @@ function Register() {
                 </div>
                 <div className='mt-8 flex justify-center items-center'>
                     <p className='text-sm'>Already have an account?</p>
-                    <button className='font-medium text-[#277BC0] ml-2 text-sm' onClick={() => window.location.href = "#"}>Sign In</button>
+                    <button className='font-medium text-[#277BC0] ml-2 text-sm' onClick={() => window.location.href = "/signin"}>Sign In</button>
                 </div>
             </div>
         </div>

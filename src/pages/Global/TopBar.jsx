@@ -9,7 +9,8 @@ import NotificationsNoneOutlinedIcon from '@mui/icons-material/NotificationsNone
 import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined';
 import SearchIcon from '@mui/icons-material/Search';
 import SettingsIcon from '@mui/icons-material/Settings';
-
+import { Link } from 'react-router-dom';
+//import SignIn from "./pages/SignIn/SignIn.js"
 
 const TopBar = () => {
     const theme = useTheme();
@@ -45,7 +46,7 @@ const TopBar = () => {
           <IconButton>
             <SettingsIcon />
           </IconButton>
-          <IconButton>
+          <IconButton onClick={() => window.location.href = "/SignIn"}>
             <PersonOutlineOutlinedIcon />
           </IconButton>
         </Box>

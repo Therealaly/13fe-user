@@ -33,7 +33,7 @@ function Form() {
                 </button>
             </div>
             <div className='mt-8 flex flex-col gap-y-4'>
-                <button className='active:scale-[.97] active:duration-75 hover:scale-[1.01] ease-in-out transition-all py-2 rounded-xl bg-[#277BC0] text-white font-medium' onClick={() => window.location.href = "#"}>Sign In</button>
+                <button className='active:scale-[.97] active:duration-75 hover:scale-[1.01] ease-in-out transition-all py-2 rounded-xl bg-[#277BC0] text-white font-medium' onClick={() => window.location.href = "/dashboard"}>Sign In</button>
                 <p className='items-center justify-center flex font-light text-xs'>OR</p>
                 <button className='flex items-center justify-center gap-2 active:scale-[.97] active:duration-75 hover:scale-[1.01] ease-in-out transition-all border-2 border-gray-200 py-2 rounded-xl' onClick={() => window.location.href = "#"}>
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -47,7 +47,7 @@ function Form() {
             </div>
             <div className='mt-8 flex justify-center items-center'>
                 <p className='text-sm'>Don't have an account?</p>
-                <button className='font-medium text-[#277BC0] ml-2 text-sm' onClick={() => window.location.href = "#"}>Sign Up</button>
+                <button className='font-medium text-[#277BC0] ml-2 text-sm' onClick={() => window.location.href = "/register"}>Sign Up</button>
             </div>
         </div>
     </div>

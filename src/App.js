@@ -11,7 +11,24 @@ import CreateRoom from "./pages/CreateRoom";
 import NewRoom from "./pages/CreateRoom/NewRoomView.jsx"
 import EditRoom from "./pages/CreateRoom/EditRoomView.jsx"
 // import RoomHistory from "./pages/RoomHistory";
+import SignIn from "./pages/SignIn/SignIn.js"
+import Register from "./pages/SignIn/Register.js" 
 
+import ReactDOM from "react-dom";
+   import { BrowserRouter } from "react-router-dom";
+
+   
+
+    const rootElement = document.getElementById("root");
+    ReactDOM.render(
+      <BrowserRouter>
+       <Routes>
+        <Route path="/signin" component={SignIn} />
+        <Route path="/register" component={Register} />
+      </Routes>
+      </BrowserRouter>,
+      rootElement
+    );
 
 function App() {
   const [theme, colorMode] = useMode();
@@ -32,6 +49,8 @@ function App() {
               <Route path='/room' element={<CreateRoom/>} />
               <Route path='/room/create' element={<NewRoom/>} />
               <Route path='/room/edit' element={<EditRoom/>} />
+              <Route path='/signin' element={<SignIn/>} />
+              <Route path='/register' element={<Register/>} />
             </Routes>
           </main>  
         </div>

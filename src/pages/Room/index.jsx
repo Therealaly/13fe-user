@@ -27,15 +27,15 @@ const Room = () => {
     
     const columns = useMemo(
         () => [
-        {accessorKey: "id", header: "ID", size: 50},
+        {accessorKey: "id", header: "ID", size: 25},
         {
-            accessorKey: "date",
-            header: "Date",
+            accessorKey: "start_time",
+            header: "Start Time",
             size:100,
         },
         {
-            accessorKey: "time",
-            header: "Time",
+            accessorKey: "end_time",
+            header: "End Time",
             size:100,
             
         },

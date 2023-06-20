@@ -36,8 +36,8 @@ export const mockDataTeam = [
 export const MockReserveData = [
   {
     id: 1,
-    date: "10 June 2023",
-    time: "Session B: 13:00 - 18:00",
+    start_time: "10 June 2023",
+    end_time: "10 June 2023",
     room: "Room A",
     email: "jonsnow@gmail.com",
     event: "Design Lecture",
@@ -45,8 +45,8 @@ export const MockReserveData = [
   },
   {
     id: 2,
-    date: "12 June 2023",
-    time: "Session A: 07:00 - 12:00",
+    start_time: "12 June 2023",
+    end_time: "12 June 2023",
     room: "Room B",
     email: "jonsnow@gmail.com",
     event: "Commitee Meeting",
@@ -54,8 +54,8 @@ export const MockReserveData = [
   },
   {
     id: 3,
-    date: "12 June 2023",
-    time: "Session A: 07:00 - 12:00",
+    start_time: "12 June 2023",
+    end_time: "12 June 2023",
     room: "Room C",
     email: "jonsnow@gmail.com",
     event: "Design Lecture",
@@ -63,8 +63,8 @@ export const MockReserveData = [
   },
   {
     id: 4,
-    date: "14 June 2023",
-    time: "Session A: 07:00 - 12:00",
+    start_time: "14 June 2023",
+    end_time: "14 June 2023",
     room: "Room A",
     email: "jonsnow@gmail.com",
     event: "Competition Rehearsal",

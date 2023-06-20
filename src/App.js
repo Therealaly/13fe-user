@@ -9,6 +9,7 @@ import User from "./pages/team";
 import Room from "./pages/Room";
 import CreateRoom from "./pages/CreateRoom";
 import NewRoom from "./pages/CreateRoom/NewRoomView.jsx"
+import EditRoom from "./pages/CreateRoom/EditRoomView.jsx"
 // import RoomHistory from "./pages/RoomHistory";
 
 
@@ -30,6 +31,7 @@ function App() {
               {/* <Route path='/room/history' element={<CreateRoom/>} /> */}
               <Route path='/room' element={<CreateRoom/>} />
               <Route path='/room/create' element={<NewRoom/>} />
+              <Route path='/room/edit' element={<EditRoom/>} />
             </Routes>
           </main>  
         </div>

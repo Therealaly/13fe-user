@@ -12,18 +12,18 @@ const CreateRoom = () => {
     const [tableData, setTableData] = useState(() => MockRoomData);
     const [createModalOpen, setCreateModalOpen] = useState(false);
 
-    const handleCreateNewRow = (values) => {
-        tableData.push(values);
-        setTableData([...tableData]);
-        // API Create Room
-      };
+    // const handleCreateNewRow = (values) => {
+    //     tableData.push(values);
+    //     setTableData([...tableData]);
+    //     // API Create Room
+    //   };
 
-    const handleSaveRowEdits = async ({ exitEditingMode, row, values }) => {
-        tableData[row.index] = values;
-        //send/receive api updates here, then refetch or update local table data for re-render
-        setTableData([...tableData]);
-        exitEditingMode(); //required to exit editing mode and close modal
-      };
+    // const handleSaveRowEdits = async ({ exitEditingMode, row, values }) => {
+    //     tableData[row.index] = values;
+    //     //send/receive api updates here, then refetch or update local table data for re-render
+    //     setTableData([...tableData]);
+    //     exitEditingMode(); //required to exit editing mode and close modal
+    //   };
 
     const handleDeleteRow = useCallback(
         (row) => {
@@ -103,11 +103,11 @@ const CreateRoom = () => {
                 columns={columns}
                 enableRowActions
                 enableEditing
-                onEditingRowSave={handleSaveRowEdits}
-                renderRowActions={({ row, table }) => (
+                // onEditingRowSave={handleSaveRowEdits}
+                renderRowActions={({ row }) => (
                     <Box sx={{ display: 'flex', gap: '1rem' }}>
                       <Tooltip arrow placement="left" title="Edit">
-                        <IconButton onClick={() => table.setEditingRow(row)}>
+                        <IconButton onClick={() => window.location.href = "/room/edit"}>
                           <Edit />
                         </IconButton>
                       </Tooltip>
